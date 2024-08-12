@@ -6,15 +6,15 @@
   --text: hsl(0, 0%, 99%);
   --textDim: hsl(0, 0%, 60%);
   --background: hsl(0, 0%, 7%);
-  --primary: rgb(69 149 235);
+  --primary: #a85aaa;
   --primaryBg: hsla(155, 100%, 65%, 1%);
-  --primaryHi: hsla(155, 100%, 75%, 25%);
-  --primaryFg: rgb(69 149 235);
-  --secondary: hsl(156, 51%, 14%);
-  --secondaryFg: rgb(69 149 235);
+  --primaryHi: hsl(299, 84%, 83%, 25%);
+  --primaryFg: #a85aaa;
+  --secondary: hsl(299, 84%, 83%, 25%);
+  --secondaryFg: #a85aaa;
   --secondaryBg: hsla(156, 51%, 14%, 5%);
-  --secondaryHi: hsla(156, 51%, 30%, 50%);
-  --accent: rgb(69 149 235);
+  --secondaryHi: hsl(299, 84%, 83%, 25%);
+  --accent: #a85aaa;
   --accentBg: hsla(155, 100%, 94%, 1%);
   --accentHi: hsla(155, 100%, 100%, 25%);
 }
@@ -57,6 +57,7 @@ body {
   filter: blur(100px);
   border-radius: 100px;
   z-index: -1;
+  opacity: .8;
   position: fixed;
 }
 .title {
@@ -84,7 +85,7 @@ body {
 }
 
 .title-name > p:nth-child(2) {
-  color: rgb(69 149 235);
+  color: #a85aaa;
 }
 
 .title > p {
@@ -225,7 +226,7 @@ span {
 .about h1 {
   font-family: "Manrope";
   width: 100%;
-  color: rgb(69 149 235);
+  color: #a85aaa;
   font-size: 8vmin;
 }
 
@@ -245,7 +246,7 @@ span {
   padding-top: 10vmin;
   width: 100%;
   text-align: center;
-  color: rgb(69 149 235);
+  color: #a85aaa;
   font-size: 8vmin;
 }
 .container {
@@ -261,7 +262,7 @@ span {
 }
 .container.left a {
   text-decoration: none;
-  color: rgb(69 149 235);
+  color: #a85aaa;
 }
 .container.right {
   left: 48%;
@@ -302,7 +303,7 @@ span {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid rgb(69 149 235);
+  border: 4px solid #a85aaa;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -362,7 +363,7 @@ span {
   }
 }
 .contact{
-    border: 1px solid rgb(69 149 235);
+    border: 1px solid #a85aaa;
     margin: 5vmin;
     border-radius: 20px;
     padding: 5vmin;
@@ -386,7 +387,7 @@ span {
 .contact-item p a{
     font-size: 2vmin;
     text-decoration: none;
-    color: rgb(69 149 235);
+    color: #a85aaa;
 }
 footer {
   width: 100%;
@@ -402,7 +403,7 @@ footer a {
   color: white;
 }
 footer a:hover {
-    color: rgb(69 149 235);
+    color: #a85aaa;
   }
 footer p {
   padding-bottom: 3vmin;
