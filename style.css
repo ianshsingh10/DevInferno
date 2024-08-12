@@ -366,14 +366,13 @@ span {
     margin: 5vmin;
     border-radius: 20px;
     padding: 5vmin;
-    height: 20vmin;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
     gap: 2vmin;
 }
 .contact-item{
-    width: 40vmin;
+    width: 50vmin;
     color: white;
 }
 .contact-item h1{
