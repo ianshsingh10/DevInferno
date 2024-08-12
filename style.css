@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:700|Manrope:400");
+*{
+    margin: 0;
+}
+:root {
+  --text: hsl(0, 0%, 99%);
+  --textDim: hsl(0, 0%, 60%);
+  --background: hsl(0, 0%, 7%);
+  --primary: rgb(69 149 235);
+  --primaryBg: hsla(155, 100%, 65%, 1%);
+  --primaryHi: hsla(155, 100%, 75%, 25%);
+  --primaryFg: rgb(69 149 235);
+  --secondary: hsl(156, 51%, 14%);
+  --secondaryFg: rgb(69 149 235);
+  --secondaryBg: hsla(156, 51%, 14%, 5%);
+  --secondaryHi: hsla(156, 51%, 30%, 50%);
+  --accent: rgb(69 149 235);
+  --accentBg: hsla(155, 100%, 94%, 1%);
+  --accentHi: hsla(155, 100%, 100%, 25%);
+}
+body{
+  background-color: var(--background);
+}
+.homepage {
+  font-family: "Manrope";
+  font-weight: 400;
+  height: 100vh;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-weight: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    z-index: 0;
+  }
+  
+  .grid-svg {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+  }
+
+.blur {
+  height: 12rem;
+  width: 12rem;
+  background-color: var(--primary);
+  filter: blur(100px);
+  border-radius: 100px;
+  z-index: -1;
+  opacity: 0.8;
+  position: fixed;
+}
+.title {
+  width: 100%;
+  height: 100%;
+}
+.title-name {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 15vmin;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-name > p {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.title-name > p:nth-child(2) {
+  color: rgb(69 149 235);
+}
+
+.title > p {
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+  margin: 0vmin 10vmin 0 10vmin;
+  font-size: 3vmin;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  height: 50px;
+  width: 160px;
+  z-index: 9999;
+}
+
+button {
+  height: 50px;
+  width: 160px;
+  clip-path: path(
+    "M 0 25 C 0 -5, -5 0, 80 0 S 160 -5, 160 25, 165 50 80 50, 0 55, 0 25"
+  );
+  border: none;
+  border-radius: 13px;
+  background-color: var(--primaryBg);
+  box-shadow: 0px -3px 15px 0px var(--primaryHi) inset;
+  color: var(--primaryFg);
+  font-family: "Manrope";
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(0px);
+  transition: all 0.2s ease;
+}
+
+span {
+  width: 100px;
+  height: 60px;
+  background-color: var(--primaryHi);
+  border-radius: 100%;
+  filter: blur(20px);
+  position: absolute;
+  bottom: -50%;
+  transition: all 0.2s ease;
+}
+
+.button:hover > span {
+  opacity: 60%;
+}
+
+.button:hover > button {
+  transform: translateY(5px);
+}
+
+.button.first {
+  top: 20%;
+  right: 15%;
+}
+
+.button.sec {
+  bottom: 40%;
+  right: 11%;
+}
+.button.third {
+  bottom: 42%;
+  left: 15%;
+}
+.button.fouth {
+  top: 18%;
+  left: 15%;
+}
+.button.sec > button {
+  background-color: var(--accentBg);
+  box-shadow: 0px -3px 15px 0px var(--accentHi) inset;
+  color: var(--accentFg);
+}
+
+.button.sec > span {
+  background-color: var(--accentHi);
+}
+
+.button.fouth > button {
+  background-color: var(--accentBg);
+  box-shadow: 0px -3px 15px 0px var(--accentHi) inset;
+  color: var(--accentFg);
+}
+
+.button.fouth > span {
+  background-color: var(--accentHi);
+}
+
+.button.third > button {
+  background-color: var(--secondaryBg);
+  box-shadow: 0px -3px 15px 0px var(--secondary) inset;
+  color: var(--secondaryFg);
+}
+
+.button.third > span {
+  background-color: var(--secondaryHi);
+}
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.about{
+    margin: 20vmin;
+    color: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vmin;
+}
+
+.about h1{
+    width: 100%;
+    color: rgb(69 149 235);
+    font-size: 8vmin;
+}
+
+.about p{
+    font-size: 3vmin;
+    width: 60vmin;
+}
+.about img{
+    width: 60vmin;
+}
+.about > p:nth-child(5){
+    width: 100%;
+}
+
+.l-r h1{
+    padding-top: 10vmin;
+    width: 100%;
+    text-align: center;
+    color: rgb(69 149 235);
+    font-size: 8vmin;
+}
+.container {
+    padding: 10px 40px;
+    position: relative;
+    display: flex;
+    background-color: inherit;
+    width: 70vmin;
+}
+
+.container.left {
+    left: 0;
+   
+}
+.container.left a{
+    text-decoration: none;
+    color: red;
+}
+.container.right {
+    left: 48%;
+}
+.container::after {
+    content: "";
+    position: absolute;
+    width: 50%; /* Adjust based on spacing */
+    height: 2px;
+    background: #000; /* Wire color */
+    top: 50%;
+    z-index: -1;
+}
+.container.left::after,
+.container.right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: #000; 
+    z-index: -1;
+}
+
+.container.left::after {
+    left: 7%; 
+    transform: translateX(0);
+}
+
+.container.right::after {
+    right: -60%;
+    transform: translateX(0);
+}
+.container::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid rgb(69 149 235 );
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left::after {
+    left: -16px;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.section {
+    padding: 20px 30px;
+    background-color: #2c2c2c;
+    color: white;
+    position: relative;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+.tag{
+    text-decoration: none;
+    color: white;
+}
+
+.section:hover {
+    background-color: #3c3c3c;
+}
+
+.section li{
+    color:#f0f0f0
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    width: 2px;
+    background: #ffffff; /* Wire color */
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+@media screen and (max-width:500px) {
+    .container.right {
+        left: 0;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 20vmin;
+    font-size: 5vmin;
+    display: flex;
+    justify-content: center;
+    gap: 5vmin;
+}
+footer a{
+    color: white;
+}
